@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_icons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_all_inclusive"
+            app:tint="@color/white"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sentiment_satisfied" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sun" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_icons"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/phrase"
+        android:textSize="20sp"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_motivational"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_hello"
+        android:layout_marginTop="230dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/phrases_motivation"
+        android:textSize="22sp"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/view_separate"
+        android:layout_width="128dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/text_motivational"
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/dark_purple"
+        android:elevation="5dp"/>
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/dark_purple"
+        android:fontFamily="@font/cabin"
+        android:text="@string/new_phrase"
+        android:textColor="#fff" />
+</RelativeLayout>
