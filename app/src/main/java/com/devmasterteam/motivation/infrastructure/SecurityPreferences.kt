@@ -1,4 +1,4 @@
-package com.devmasterteam.motivation
+package com.devmasterteam.motivation.infrastructure
 
 import android.content.Context
 import android.content.SharedPreferences

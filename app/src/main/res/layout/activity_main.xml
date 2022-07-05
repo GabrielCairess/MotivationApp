@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <LinearLayout
         android:id="@+id/linear_icons"
@@ -15,26 +15,31 @@
         android:padding="8dp">
 
         <ImageView
+            android:id="@+id/image_all"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/ic_all_inclusive"
-            app:tint="@color/white"/>
+            app:tint="@color/dark_purple" />
 
         <ImageView
+            android:id="@+id/image_happy"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/ic_sentiment_satisfied" />
+            android:src="@drawable/ic_sentiment_satisfied"
+            app:tint="@color/dark_purple" />
 
         <ImageView
+            android:id="@+id/image_sunny"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/ic_sun" />
+            android:src="@drawable/ic_sun"
+            app:tint="@color/dark_purple" />
     </LinearLayout>
 
     <TextView
@@ -42,12 +47,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear_icons"
+        android:fontFamily="@font/cabin"
         android:gravity="center"
         android:padding="15dp"
         android:text="@string/phrase"
-        android:textSize="20sp"
-        android:fontFamily="@font/cabin"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/text_motivational"
@@ -55,12 +60,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_hello"
         android:layout_marginTop="230dp"
+        android:fontFamily="@font/cabin"
         android:gravity="center"
         android:padding="15dp"
         android:text="@string/phrases_motivation"
-        android:textSize="22sp"
-        android:fontFamily="@font/cabin"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="22sp" />
 
     <View
         android:id="@+id/view_separate"
@@ -70,7 +75,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/purple_500"
         android:backgroundTint="@color/dark_purple"
-        android:elevation="5dp"/>
+        android:elevation="5dp" />
 
     <Button
         android:id="@+id/button_new_phrase"
